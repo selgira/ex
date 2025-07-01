@@ -1,0 +1,34 @@
+Устанавливаем бзип2 для установки дров (если возникает ошибка):
+sudo apt update
+sudo apt install bzip2 tar
+
+Качаем базовое ПО:
+sudo apt install libreoffice
+
+Добавление принтера:
+sudo apt install cups printer-driver-cups-pdf system-config-printer -y
+
+Для создания резервного копирования ОС можно скачать след утилиту:
+sudo apt install timeshift -y
+    		    
+либо вручную:
+sudo tar --exclude=/proc --exclude=/tmp --exclude=/mnt --exclude=/dev --exclude=/sys --exclude=/run -cvpzf /home/$(whoami)/backup_root.tar.gz /
+посмотреть:
+/home/твоё_имя/backup_root.tar.gz
+
+Для создания групп пользователей надо сначала добавить пользователей а потом можно использовать утилиту:
+sudo apt install gnome-system-tools
+Для журнала мониторинга (все действия, которые были совершены пользователями(и не только)):
+htop
+~/.config/htop
+
+Перечень ресурсов для выполнения задания:
+
+-образ ОС (Ubuntu, Fedora, Linux Mint, Fedora Server, Ubuntu Server и т.д.)
+-графический редактор (NanoCAD, КОМПАС, 3d-Paint, GIMP, Inkscape и т.д.)
+-пакет программ (OpenOffice, LibreOffice, Kingsoft Office Suite Free, SoftMaker FreeOffice, 1С и т.д.)
+-архиватор (7-Zip, PeaZip, Zstandard и т.д.)
+-утилита (CPU-Z, GPU-Z, Open Hardware Monitor, Speccy, HWinfo и т.д.)
+-антивирус (Dr.Web CureIt, Avast Free Antivirus, 360 Total Security, Kaspersky Free и т.д.)
+-среда разработки (NetBeans, Lazarus Linux, Eclipse IDE, Code::Blocks, MonoDevelop, Android Studio, JetBrains Raider и т.д.)
+-СУБД (MySQL, SQLite, Devilbox, PostgreSQL, веб-приложение phpMyAdmin и т.д.)
